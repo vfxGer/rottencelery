@@ -1,0 +1,13 @@
+version: '2'
+services:
+ oneplusone:
+  build: .
+ caller:
+  build: .
+  command: python caller.py
+ broker:
+   image: rabbitmq:3.6
+ store:
+  image: redis:4.0
+
+
