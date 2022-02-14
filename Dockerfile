@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.8
 RUN useradd -ms /bin/bash worker_user
 
 ADD requirements.txt /home/worker_user/
